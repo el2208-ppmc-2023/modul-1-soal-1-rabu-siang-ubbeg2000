@@ -11,9 +11,9 @@
 
 int main()
 {
-    int num = 0;
-    int factorial = 1;
-    char temp[sizeof(int) * 8];
+    unsigned int num = 0;
+    unsigned int factorial = 1;
+    char temp[sizeof(unsigned int) * 8];
     int i;
 
     printf("Enter decimal number: ");
@@ -28,7 +28,7 @@ int main()
     printf("Result is %s.\n", factorial % 2 ? "odd" : "even");
 
     printf("Binary: ");
-    for (i = 0; 1 << i <= factorial; i++)
+    for (i = 0; (1 << i) <= factorial; i++)
     {
         temp[i] = (factorial >> i) & 1 ? '1' : '0';
     }
