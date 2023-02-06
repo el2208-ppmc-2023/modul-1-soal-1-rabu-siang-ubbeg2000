@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "1",
+      "setup": "make main",
+      "run": "./main",
+      "input": "15",
+      "output": "Factorial: 2004310016\r\nResult is even.\r\nBinary: 1110111011101110101100000000000\r\nHexadecimal: 77775800",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "2",
+      "setup": "make main",
+      "run": "./main",
+      "input": "7",
+      "output": "Factorial: 5040\r\nResult is even.\r\nBinary: 1001110110000\r\nHexadecimal: 13B0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "3",
+      "setup": "make main",
+      "run": "./main",
+      "input": "2",
+      "output": "Factorial: 2\r\nResult is even.\r\nBinary: 10\r\nHexadecimal: 2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "4",
+      "setup": "make main",
+      "run": "./main",
+      "input": "1",
+      "output": "Factorial: 1\r\nResult is odd.\r\nBinary: 1\r\nHexadecimal: 1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "5",
+      "setup": "make main",
+      "run": "./main",
+      "input": "0",
+      "output": "Factorial: 1\r\nResult is odd.\r\nBinary: 1\r\nHexadecimal: 1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
